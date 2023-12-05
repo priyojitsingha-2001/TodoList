@@ -35,3 +35,8 @@ taskList.addEventListener('click', function (e) {
         //then we remove its parent element(li) from the dom
         e.target.parentElement.remove();
 });
+
+//this saves all the task to local storage
+function saveTask() {
+    localStorage.setItem("data", taskList.innerHTML);
+}
