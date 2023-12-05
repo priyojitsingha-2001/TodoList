@@ -63,3 +63,8 @@
     cursor: pointer;
     border-radius: 40px;
 }
+
+.row button:active {
+    background: #990000;
+    color: #cccccc;
+}
