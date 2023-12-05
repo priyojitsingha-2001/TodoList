@@ -22,4 +22,16 @@ addButton.addEventListener('click', () => {
     }
     //at the end we empty the input field
     inputBox.value = "";
-})
+});
+
+//when the user clicks on any item in the task list..
+taskList.addEventListener('click', function (e) {
+    //if the event was dispatched to the list items
+    if (e.target.tagName === 'LI')
+        //then we add the checked class to it
+        e.target.classList.toggle('checked');
+    //if the event was dispatched to the span tags(which hold cross icon)
+    else if (e.target.tagName === 'SPAN')
+        //then we remove its parent element(li) from the dom
+        e.target.parentElement.remove();
+});
