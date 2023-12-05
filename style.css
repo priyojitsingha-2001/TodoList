@@ -68,3 +68,34 @@
     background: #990000;
     color: #cccccc;
 }
+
+#list-container li {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+}
+
+#list-container li::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+/* when the task is :checked */
+
+#list-container li.checked {
+    text-decoration: line-through;
+}
+
+#list-container li.checked::before {
+    background-image: url(images/checked.png);
+}
