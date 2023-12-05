@@ -50,3 +50,15 @@ function showTask() {
     taskList.innerHTML = localStorage.getItem("data");
 }
 showTask();
+
+//footer
+const anchorTag = document.createElement('a');
+anchorTag.textContent = "Prioyjit Singha";
+anchorTag.href = "https://github.com/priyojitsingha-2001";
+anchorTag.target = "_blank"
+anchorTag.style.color = "white";
+anchorTag.style.textDecoration = "none";
+
+const currentYear = new Date().getFullYear();
+
+document.querySelector("footer").innerHTML = `&copy; ${currentYear} ${anchorTag.outerHTML} | All rights reserved`;

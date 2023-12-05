@@ -117,3 +117,8 @@
 #list-container li span:hover {
     background: #edeef0;
 }
+
+footer {
+    text-align: center;
+    color: #fff;
+}
