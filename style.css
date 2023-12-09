@@ -7,6 +7,20 @@
     box-sizing: border-box;
 }
 
+/* scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: linear-gradient(#642bff, #ff22e6);
+}
+
 .container {
     width: 100%;
     min-height: 100vh;
